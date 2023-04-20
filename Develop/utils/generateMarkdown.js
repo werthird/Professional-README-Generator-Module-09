@@ -1,26 +1,29 @@
 //Included packages needed for this application
 const questions = require('./questions.js');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+
+// Function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
-  // this will use data passed in from generateMarkdown function. have a logic gate to make sure a license was chosen.
-  return `https://img.shields.io/badge/license-${license}-blue`;
-
+  let licenseBandge = license == 'None' ? '' : `[![${license}](https://img.shields.io/badge/license-${license}-blue)](#license)`;
+  return licenseBandge;
 }
 
 
-
-// TODO: Create a function that returns the license link - this is internally in the .md file...a link to the license section
-// If there is no license, return an empty string
+// Function that returns the license link into table of contents
 function renderLicenseLink(license) {
-  // this will use data passed in from generateMarkdown function. have a logic gate to make sure a license was chosen.
+  let licenseLink = license == 'None' ? '' : '- [License](#license)';
+  return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
+// Function that returns the license section of README
 function renderLicenseSection(license) {
-  // this will use data passed in from generateMarkdown function.  have a logic gate to make sure a license was chosen.
+  let licenseSectionMarkdown = 
+  `## [License](#license)
+  Distributed under the ${license} License. See LICENSE.txt for more information.
+  `;
+  let licenseSection = license == 'None' ? '' : licenseSectionMarkdown;
+  return licenseSection;
 }
 
 
@@ -32,7 +35,8 @@ return `<header style="height: 100px; background: linear-gradient(to right, #626
 
 <br />
 
-<a href="#license"><img src="${renderLicenseBadge(data.license)}" alt="License Badge"/></a>
+${renderLicenseBadge(data.license)}
+
 
 <br />
 
@@ -51,9 +55,9 @@ ${data.description}
   - [Project Status](#project-status)
   - [Installation](#installation)
   - [Useage](#useage)
-  - [License](#license)
   - [Contributing Guidelines](#contributing)
-  - [Test Instructions](#test)
+  - [Test Instructions](#test) 
+  ${renderLicenseLink(data.license)}
 - [Credits](#credits)
   - [Contributors](#contributors)
   - [Acknowledgements](#acknowledgements)
@@ -88,12 +92,6 @@ ${data.usage}
 
 <img style="text-align: center" src="#" alt="#" style="width:100%;height:100%"/>
 
-
-<br />
-
-## [License](#license)
-This application is covered under the ${data.license} license.
-
 <br />
 
 ## [Contributing Guidelines](#contributing)
@@ -103,6 +101,10 @@ ${data.contributing}
 
 ## [Test Instructions](#test)
 ${data.test}
+
+<br />
+
+${renderLicenseSection(data.license)}
 
 <br />
 <br />
@@ -132,8 +134,6 @@ Here is a link to our <a href="https://github.com/${data.username}">GitHub profi
 
 Or send us an <a href="mailto: ${data.email}?subject=Feedback">Email!</a>
 `;
-  // you will need to use the license functions in here ^, passing data to the functions you call -- licenseFunction(data.license)
-
 }
 
 module.exports = generateMarkdown;
