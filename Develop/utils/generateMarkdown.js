@@ -90,12 +90,12 @@ ${data.installation}
 ## [Useage](#useage)
 ${data.usage}
 
-<img style="text-align: center" src="#" alt="#" style="width:100%;height:100%"/>
-
 <br />
 
 ## [Contributing Guidelines](#contributing)
 ${data.contributing}
+
+For any suggestions or comments, please see [Questions](#questions) section below.
 
 <br />
 
