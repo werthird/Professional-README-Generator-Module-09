@@ -1,17 +1,21 @@
-<header style="height: 80px; background: linear-gradient(to right, #6268f2, #23d0ee);"><h1 style="font-size: 60px; text-align: center; color: black"><strong>Coolest Project Ever!!!!</strong></h1></header>
+<header style="height: 100px; background: linear-gradient(to right, #6268f2, #23d0ee);"><h1 style="font-size: 65px; text-align: center"><strong></strong></h1></header>
 
 <br />
+
+<a href="#license"><img src="https://img.shields.io/badge/license-Unlicense-blue" alt="License Badge"/></a>
+
 <br />
 
 > # [Description](#description)
-This has to be the best project anyone has ever seen on the interenet! It's so cool, that we don't even know how to describe it. There is nothing better then this project and there never will be!
+asdf
 
 <br />
 <br />
 
 ---
+<details>
+<summary style="font-size: 25px">Table of Contents</summary> 
 
-> # Table of Contents
 - [Description](#description)
 - [Getting Started](#getting-started)
   - [Project Status](#project-status)
@@ -24,6 +28,7 @@ This has to be the best project anyone has ever seen on the interenet! It's so c
   - [Contributors](#contributors)
   - [Acknowledgements](#acknowledgements)
 - [Questions](#questions)
+</details>
 
 <br />
 <br />
@@ -37,37 +42,37 @@ This has to be the best project anyone has ever seen on the interenet! It's so c
 ## [Project Status](#project-status)
     Completed
 
-Checkout our <a href="https://github.com/ChemicalModel/Yeti-Games">GitHub Repo.</a> 
+Checkout our <a href="asdf">GitHub Repo.</a> 
 
-Link to <a href="https://werthird.github.io/Weather-Dashboard---Module-06/">Deployed Site.</a>
+Link to <a href="asdf">Deployed Site.</a>
 
 <br />
 
 ## [Installation](#installation)
-Nothing special to install. Just load it up and run it on.
+asdf
 
 <br />
 
 ## [Useage](#useage)
-1. Click the site url.
-2. Wait for it to load in the browser.
-3. Close your eyes for maximum coolness effect.
-4. Open your eyes and be blown away!
+asdf
+
+<img style="text-align: center" src="#" alt="#" style="width:100%;height:100%"/>
+
 
 <br />
 
 ## [License](#license)
-Unlicensed
+This application is covered under the Unlicense license.
 
 <br />
 
 ## [Contributing Guidelines](#contributing)
-It's so cool, there wont be anything else to contribute.
+asdf
 
 <br />
 
 ## [Test Instructions](#test)
-No test needed.
+adsf
 
 <br />
 <br />
@@ -79,12 +84,12 @@ No test needed.
 <br />
 
 ## [Contributors](#contributors)
-Devin Reilly!
+asdf
 
 <br />
 
 ## [Acknowledgements](#acknowledgements)
-Just me baby!
+asdf
 
 <br />
 <br />
@@ -93,14 +98,6 @@ Just me baby!
 
 > # [Questions](#questions)
 
-Here is a link to our <a href="https://github.com/werthird"GitHub profile page!</a>
+Here is a link to our <a href="https://github.com/asdf">GitHub profile page!</a>
 
-Or send us an <a href="mailto: werthird@aol.com?subject=Feedback">Email!</a>
-
----
-
-# Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+Or send us an <a href="mailto: asdf?subject=Feedback">Email!</a>

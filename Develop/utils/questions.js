@@ -1,9 +1,10 @@
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
   {//PROJECT NAME
     type: 'input',
     message: 'What is the name of your project?',
-    name: 'title'
+    name: 'title',
+    initial: 'Project Title'
   },
   {//DESCRIPTION
     type: 'editor',
@@ -40,7 +41,7 @@ const questions = [
     type: 'list',
     message: 'Select a license type.',
     name: 'license',
-    choices: ['Apache', 'MIT', 'BSD', 'Unlicensed'],
+    choices: ['Apache', 'MIT', 'BSD', 'Unlicense'],
   },
   {//CONTRIBUTING
     type: 'input',

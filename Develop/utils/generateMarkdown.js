@@ -1,9 +1,15 @@
+//Included packages needed for this application
+const questions = require('./questions.js');
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   // this will use data passed in from generateMarkdown function. have a logic gate to make sure a license was chosen.
-  return `https://img.shields.io/badge/license-${license}-blue`
+  return `https://img.shields.io/badge/license-${license}-blue`;
+
 }
+
+
 
 // TODO: Create a function that returns the license link - this is internally in the .md file...a link to the license section
 // If there is no license, return an empty string
@@ -20,11 +26,14 @@ function renderLicenseSection(license) {
 
 
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
-return `<header style="height: 80px; background: linear-gradient(to right, #6268f2, #23d0ee);"><h1 style="font-size: 60px; text-align: center; color: black"><strong>${data.title}</strong></h1></header>
+return `<header style="height: 100px; background: linear-gradient(to right, #6268f2, #23d0ee);"><h1 style="font-size: 65px; text-align: center"><strong>${data.title}</strong></h1></header>
 
 <br />
+
+<a href="#license"><img src="${renderLicenseBadge(data.license)}" alt="License Badge"/></a>
+
 <br />
 
 > # [Description](#description)
@@ -34,8 +43,9 @@ ${data.description}
 <br />
 
 ---
+<details>
+<summary style="font-size: 25px">Table of Contents</summary> 
 
-> # Table of Contents
 - [Description](#description)
 - [Getting Started](#getting-started)
   - [Project Status](#project-status)
@@ -48,6 +58,7 @@ ${data.description}
   - [Contributors](#contributors)
   - [Acknowledgements](#acknowledgements)
 - [Questions](#questions)
+</details>
 
 <br />
 <br />
@@ -75,10 +86,13 @@ ${data.installation}
 ## [Useage](#useage)
 ${data.usage}
 
+<img style="text-align: center" src="#" alt="#" style="width:100%;height:100%"/>
+
+
 <br />
 
 ## [License](#license)
-${data.license}
+This application is covered under the ${data.license} license.
 
 <br />
 
@@ -117,16 +131,9 @@ ${data.acknowledgements}
 Here is a link to our <a href="https://github.com/${data.username}">GitHub profile page!</a>
 
 Or send us an <a href="mailto: ${data.email}?subject=Feedback">Email!</a>
-
----
-
-# Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 `;
   // you will need to use the license functions in here ^, passing data to the functions you call -- licenseFunction(data.license)
+
 }
 
 module.exports = generateMarkdown;
