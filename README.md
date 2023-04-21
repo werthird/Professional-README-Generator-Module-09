@@ -47,6 +47,9 @@ Our command-line Professional README Generator helps you show that your amazing 
 
 To get a look at the code used for this application, checkout our my <a href="https://github.com/werthird/Professional-README-Generator-Module-09">GitHub Repo!</a> 
 
+<br />
+
+*Click on this [**LINK**](https://drive.google.com/file/d/1pgNIsay2YsOpGeCvZEuselizqn6VNUgK/view?usp=sharing) to get a walk through video of how to use the application.*
 
 <br />
 
@@ -77,6 +80,12 @@ This is a command-line application that will take you through a series of prompt
 	 **Note:** to build the Description sections and the Usage section of the README, we provide you with a text editor, so you can build out more information. Sometimes this text editor doesn't pop-up right away. Look on your task bar to locate it. 
 	 
 	 When you are finished, press the close button and make sure to select SAVE! This won't save to your device, rather it will save it to the terminal so it can be added to the README.
+
+<br />
+
+*Click on this [**LINK**](https://drive.google.com/file/d/1pgNIsay2YsOpGeCvZEuselizqn6VNUgK/view?usp=sharing) to get a walk through video of how to use the application.*
+
+<br />
 
 <img style="text-align: center; border: solid 2px white; width:100%;height:100%" src="./Assets/img/readme-generator-screenshot.jpg" alt="README Generator Screenshot showing command-line prompts"/>
 

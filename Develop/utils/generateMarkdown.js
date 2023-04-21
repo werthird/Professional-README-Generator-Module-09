@@ -76,7 +76,7 @@ ${data.description}
 ## [Project Status](#project-status)
     ${data.status}
 
-Checkout our <a href="${data.github}">GitHub Repo.</a> 
+To get a look at the code used for this application, checkout our <a href="${data.github}">GitHub Repo.</a> 
 
 Link to <a href="${data.webpage}">Deployed Site.</a>
 
